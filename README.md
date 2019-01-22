@@ -8,7 +8,7 @@ This is a guide that help to use graph.cool with Relay
 
 Create a new <b>React Project</b> using the create-react-app.
 
-<br>
+<br/>
 
 **2. Test run the project**
 
@@ -24,7 +24,7 @@ Run the project.
 
 Then open in browser if it didn't opened by default
 
-<br>
+<br/>
 
 **3. Install graphcool cli**
 
@@ -32,7 +32,7 @@ Note: <em>Stop the project first.</em>
 
 <code>$ npm install -g graphcool</code>
 
-<br>
+<br/>
 
 **4. Init Graphcool**
 
@@ -40,7 +40,7 @@ Note: <em>Stop the project first.</em>
 
 This will put all your Graphcool files inside graphcool folder of your project.
 
-<br>
+<br/>
 
 **5. Add the schema**
 
@@ -67,7 +67,7 @@ This will put all your Graphcool files inside graphcool folder of your project.
 
 Next copy the content of schema to the <b><em>graphcool/types.graphql</em></b> .
 
-<br>
+<br/>
 
 **6. Deploy the project to Graphcool Cloud using**
 
@@ -89,7 +89,7 @@ choose:
 
 Leave the target name <b><em>prod</em></b>
 
-<br>
+<br/>
 
 **7. Adding a mutation**
 
@@ -97,7 +97,7 @@ Leave the target name <b><em>prod</em></b>
 
 Note: <em>Be sure you still in the <code> graphcool</code> folder</em>
 
-<code> graphcool playground</code>
+<code> $ graphcool playground</code>
 
 run this cood to open the graphcool playground.
 
@@ -116,7 +116,7 @@ This is an example of the code to write for a mutation.
 
     Then hit the run button.
 
-<br>
+<br/>
 
 **8. Testing the added mutation**
 
@@ -132,7 +132,43 @@ Add this in a new tab in the graphcool playground
 
     Then hit the run button.
 
-<br>
+<br/>
+
+**9. Change the project hierarchy and the css from this link**
+
+    https://www.howtographql.com/react-relay/1-getting-started/
+
+<br/>
+
+**10. Install react-relay**
+
+Note: <em> You should change to <b>hacknews</b> directory first.</em>
+
+    $ yarn add react-relay
+
+<br/>
+
+**11. Install relay-compiler**
+
+    $ yarn add relay-compiler --dev
+
+<br/>
+
+**12. Install the babel-plugin-relay**
+
+    $ yarn add babel-plugin-relay --dev
+
+<br/>
+
+**13. Eject the React app**
+
+    $ yarn eject
+
+This will let you see the project configuration files
+
+
+
+
 
 
 .  
