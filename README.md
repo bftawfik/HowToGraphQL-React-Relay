@@ -2,13 +2,39 @@
 
 This is a guide that help to use graph.cool with Relay
 
-**1. Install graphcool cli**
+**1. Create new React Project**
+
+<code>$ yarn create react-app hackernews</code>
+
+Create a new <b>React Project</b> using the create-react-app.
+
+<br>
+
+**2. Test run the project**
+
+<code>$ cd hackernews</code>
+
+Change to project directory.
+
+<code>$ yarn start</code>
+
+Run the project.
+
+<code>http://localhost:3000/</code>
+
+Then open in browser if it didn't opened by default
+
+<br>
+
+**3. Install graphcool cli**
+
+Note: <em>Stop the project first.</em>
 
 <code>$ npm install -g graphcool</code>
 
 <br>
 
-**2. Init Graphcool**
+**4. Init Graphcool**
 
 <code>$ graphcool init graphcool</code>
 
@@ -16,7 +42,7 @@ This will put all your Graphcool files inside graphcool folder of your project.
 
 <br>
 
-**3. Add the schema**
+**5. Add the schema**
 
     type Link @model {
       id: ID! @isUnique
@@ -43,7 +69,7 @@ Next copy the content of schema to the <b><em>graphcool/types.graphql</em></b> .
 
 <br>
 
-**4. Deploy the project to Graphcool Cloud using**
+**6. Deploy the project to Graphcool Cloud using**
 
 <code>$ cd graphcool</code>
 
@@ -65,7 +91,7 @@ Leave the target name <b><em>prod</em></b>
 
 <br>
 
-**5. Adding a mutation**
+**7. Adding a mutation**
 
 <b>A mutation is a data insertion in the database.</b>
 
@@ -92,7 +118,7 @@ This is an example of the code to write for a mutation.
 
 <br>
 
-**5. Testing the added mutation**
+**8. Testing the added mutation**
 
     {
       allLinks{
@@ -101,6 +127,12 @@ This is an example of the code to write for a mutation.
         url
       }
     }
+
+Add this in a new tab in the graphcool playground
+
+    Then hit the run button.
+
+<br>
 
 
 .  
